@@ -1,10 +1,7 @@
-// Copyright (c) 2017 PlanGrid, Inc.
-
 import React from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import { PDFJS } from 'pdfjs-dist/build/pdf.combined';
 import 'pdfjs-dist/web/compatibility';
-import Loading from '../loading';
 
 PDFJS.disableWorker = true;
 const INCREASE_PERCENTAGE = 0.2;
@@ -139,7 +136,7 @@ export default class PDFDriver extends React.Component {
 
   renderLoading() {
     if (this.state.pdf) return null;
-    return (<div className="pdf-loading"><Loading /></div>);
+    return (<div className="pdf-loading">LOADING.. cross kar ya brdasht kar</div>);
   }
 
   render() {
